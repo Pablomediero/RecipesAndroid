@@ -7,7 +7,7 @@ Necesitas un **APIKEY** de Chatgpt.
 ### Arquitectura
 Este proyecto utiliza una Clean Architecture, busco separar la lógica en capas para mejorar la modularidad, flexibilidad y mantenibilidad.
 
-Paara la interfaz de usuario he combinado el patrón de diseño MVVM (Model-View-ViewModel).
+Para la interfaz de usuario he combinado el patrón de diseño MVVM (Model-View-ViewModel).
 
 | **Capa**              | **Función** |
 | ---                   | ---       |
@@ -22,7 +22,7 @@ Librerias y herramientas que he utilizado en esta aplicación.
 
 - **Room:** Base de datos local.
 
-- **Koin:** inyector de dependencias.
+- **Koin:** Inyector de dependencias.
 
 - **Componente Navigation:** Gestión de navegación.
 
