@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.recipe_detail.RecipeDetailFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_detail_recipe_image"
+        style="@style/custom_recipe_detail_imageview"
+        android:background="@color/black"
+        android:src="@drawable/iv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_recipe_detail_back"
+        style="@style/custom_floating_button"
+        android:layout_margin="@dimen/margin_large"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_recipe_image">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_detail_recipe_name"
+            style="@style/custom_recipe_detail_textview_title"
+            android:gravity="center"
+            android:paddingVertical="@dimen/margin_medium" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_recipe_detail_tabs_components"
+            style="@style/custom_recipe_detail_tablayout" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_recipe_detail_viewpager_components"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_recipe_detail_delete"
+        style="@style/custom_floating_button"
+        android:layout_margin="@dimen/margin_medium"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_detail_recipe"
+        style="@style/custom_progressbar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_recipe_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

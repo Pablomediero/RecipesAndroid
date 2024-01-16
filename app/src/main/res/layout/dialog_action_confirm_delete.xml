@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+
+    <TextView
+        style="@style/custom_textview_title"
+        android:layout_gravity="center"
+        android:text="@string/dialog_action_confirm_delete_title"/>
+
+    <TextView
+        style="@style/custom_textview_subtitle"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:text="@string/dialog_action_confirm_delete_subtitle" />
+
+    <ImageView
+        style="@style/custom_imageview"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:contentDescription="@string/dialog_action_confirm_delete_imageview_desc"
+        android:src="@drawable/app_logo_delete" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_confirm_delete_no"
+            style="@style/custom_dialog_button"
+            android:layout_marginHorizontal="@dimen/margin_small"
+            android:text="@string/dialog_action_confirm_delete_button_no" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_confirm_delete_yes"
+            style="@style/custom_dialog_button"
+            android:layout_marginHorizontal="@dimen/margin_small"
+            android:text="@string/dialog_action_confirm_delete_button_yes" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

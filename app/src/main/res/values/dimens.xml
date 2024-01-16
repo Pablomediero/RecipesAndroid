@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensiones generales -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Tamaños de texto -->
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+
+    <!-- Alturas y anchuras -->
+    <dimen name="view_height_short">40dp</dimen>
+    <dimen name="view_height_medium">56dp</dimen>
+    <dimen name="view_height_tall">72dp</dimen>
+
+    <dimen name="view_width_small">80dp</dimen>
+    <dimen name="view_width_medium">120dp</dimen>
+    <dimen name="view_width_large">160dp</dimen>
+
+    <!-- Tamaños de iconos -->
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_medium">36dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+    <!-- Fragments -->
+    <dimen name="component_title_text_size">24dp</dimen>
+    <dimen name="component_subtitle_text_size">18dp</dimen>
+    <dimen name="component_content_text_size">14dp</dimen>
+    <dimen name="component_margin_vertical">8dp</dimen>
+
+    <dimen name="component_serving_content_text_size">24sp</dimen>
+    <dimen name="component_serving_content_margin_horizontal">8dp</dimen>
+
+    <!-- Styles -->
+    <dimen name="custom_dialog_button_radius">12dp</dimen>
+
+    <dimen name="custom_imageview_width">200dp</dimen>
+    <dimen name="custom_imageview_height">200dp</dimen>
+
+    <dimen name="custom_textview_title_textSize">20sp</dimen>
+    <dimen name="custom_textview_subtitle_textSize">14sp</dimen>
+
+    <dimen name="custom_recipe_detail_textview_title_textSize">20sp</dimen>
+    <dimen name="custom_recipe_detail_elevation">5dp</dimen>
+    <dimen name="custom_recipe_detail_imageview_width">0dp</dimen>
+    <dimen name="custom_recipe_detail_imageview_height">250dp</dimen>
+    <dimen name="custom_recipe_detail_tablayout_maxwidth">0dp</dimen>
+    <dimen name="custom_progressbar_elevation">10dp</dimen>
+
+    <dimen name="custom_recipe_preview_textview_title_textSize">20sp</dimen>
+    <dimen name="custom_recipe_preview_textview_subtitle_textSize">16sp</dimen>
+    <dimen name="custom_recipe_preview_textview_content_textSize">12sp</dimen>
+    <dimen name="custom_recipe_preview_margin_vertical">8dp</dimen>
+    <dimen name="custom_recipe_preview_margin_top">30dp</dimen>
+    <dimen name="custom_recipe_preview_margin_top_content">4dp</dimen>
+    <dimen name="custom_recipe_preview_floating_button_margin">16dp</dimen>
+
+    <dimen name="custom_ingredients_list_textview_title_textSize">20sp</dimen>
+    <dimen name="custom_ingredients_list_textview_subtitle_textSize">16sp</dimen>
+    <dimen name="custom_ingredients_list_textview_content_textSize">14sp</dimen>
+    <dimen name="custom_ingredients_list_floating_button_margin">16dp</dimen>
+    <dimen name="custom_ingredients_list_margin_top">24dp</dimen>
+    <dimen name="custom_ingredients_list_margin_vertical">16dp</dimen>
+    <dimen name="custom_ingredients_list_cardview_elevation">5dp</dimen>
+    <dimen name="custom_ingredients_list_cardview_corners">1dp</dimen>
+
+    <dimen name="custom_recipes_list_margin_top">16dp</dimen>
+    <dimen name="custom_recipes_list_textview_title_textSize">20sp</dimen>
+    <dimen name="custom_recipes_list_textview_subtitle_textSize">16sp</dimen>
+    <dimen name="custom_recipes_list_textview_empty_textSize">14sp</dimen>
+
+    <dimen name="custom_item_ingredient_textview_title_textSize">24sp</dimen>
+    <dimen name="custom_item_recipe_textview_title_textSize">18sp</dimen>
+    <dimen name="custom_item_recipe_imageview_width">60dp</dimen>
+    <dimen name="custom_item_recipe_imageview_height">60dp</dimen>
+
+</resources>

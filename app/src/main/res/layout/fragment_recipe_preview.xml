@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.recipe_preview.RecipePreviewFragment">
+
+    <ProgressBar
+        android:id="@+id/pb_recipe_preview"
+        style="@style/custom_progressbar"
+        android:elevation="@dimen/custom_progressbar_elevation"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        style="@style/custom_recipe_preview_cardview"
+        android:layout_marginTop="@dimen/custom_recipe_preview_margin_top"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_recipe_preview_name"
+                style="@style/custom_recipe_preview_textview_title"
+                android:gravity="center"
+                android:text="@string/recipe_preview_name" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/custom_recipe_preview_cardview"
+        android:layout_marginVertical="30dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_instructions_info"
+                    style="@style/custom_recipe_preview_textview_subtitle"
+                    android:layout_marginTop="@dimen/custom_recipe_preview_margin_top_content"
+                    android:text="@string/component_instructions_tv_title"
+                    android:visibility="invisible"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_instructions"
+                    style="@style/custom_recipe_preview_textview_content"
+                    android:layout_marginVertical="@dimen/custom_recipe_preview_margin_vertical"
+                    tools:text="contenido" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_ingredients_info"
+                    style="@style/custom_recipe_preview_textview_subtitle"
+                    android:layout_marginTop="@dimen/custom_recipe_preview_margin_top_content"
+                    android:text="@string/recipe_preview_ingredients"
+                    android:visibility="invisible"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_ingredients"
+                    style="@style/custom_recipe_preview_textview_content"
+                    android:layout_marginVertical="@dimen/custom_recipe_preview_margin_vertical"
+                    tools:text="contenido" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_serving_info"
+                    style="@style/custom_recipe_preview_textview_subtitle"
+                    android:layout_marginTop="@dimen/custom_recipe_preview_margin_top_content"
+                    android:text="@string/component_serving_tv_title"
+                    android:visibility="invisible"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_recipe_preview_serving"
+                    style="@style/custom_recipe_preview_textview_content"
+                    android:layout_marginVertical="@dimen/custom_recipe_preview_margin_vertical"
+                    tools:text="contenido" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/bt_recipe_preview_generate_other_recipe"
+            style="@style/custom_floating_button_extended"
+            android:layout_margin="@dimen/custom_recipe_preview_floating_button_margin"
+            android:text="@string/recipe_preview_button_generate_other"
+            app:icon="@drawable/ic_refresh" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/bt_recipe_preview_save"
+            style="@style/custom_floating_button_extended"
+            android:layout_margin="@dimen/custom_recipe_preview_floating_button_margin"
+            android:text="@string/recipe_preview_button_save"
+            app:icon="@drawable/ic_save" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

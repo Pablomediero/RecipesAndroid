@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recipeListFragment">
+
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.hiberus.receptom.presentation.recipe_list.RecipeListFragment"
+        android:label="fragment_recipe_list"
+        tools:layout="@layout/fragment_recipe_list" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_recipeListFragment_to_ingredientsListFragment"
+            app:destination="@id/ingredientsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.hiberus.receptom.presentation.recipe_detail.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" >
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/ingredientsListFragment"
+        android:name="com.hiberus.receptom.presentation.ingredients_list.IngredientsListFragment"
+        android:label="fragment_ingredients_list"
+        tools:layout="@layout/fragment_ingredients_list" >
+        <action
+            android:id="@+id/action_ingredientsListFragment_to_recipePreviewFragment"
+            app:destination="@id/recipePreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipePreviewFragment"
+        android:name="com.hiberus.receptom.presentation.recipe_preview.RecipePreviewFragment"
+        android:label="fragment_recipe_preview"
+        tools:layout="@layout/fragment_recipe_preview" >
+        <argument
+            android:name="ingredients"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+
+    <TextView
+        style="@style/custom_textview_title"
+        android:layout_gravity="center"
+        android:text="@string/dialog_action_confirm_add_title" />
+
+    <TextView
+        style="@style/custom_textview_subtitle"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:text="@string/dialog_action_confirm_add_subtitle" />
+
+    <ImageView
+        style="@style/custom_imageview"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:contentDescription="@string/dialog_action_confirm_add_imageview_desc"
+        android:src="@drawable/app_logo_ok" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_confirm_add"
+            style="@style/custom_dialog_button"
+            android:text="@string/dialog_action_confirm_add_button" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

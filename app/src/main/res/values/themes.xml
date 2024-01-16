@@ -1,0 +1,253 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="Theme.Receptom" parent="Base.Theme.Receptom" />
+
+    <!-- PRINCIPAL STYLE -->
+    <style name="Base.Theme.Receptom" parent="Theme.Material3.DynamicColors.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+    </style>
+
+    <!-- CUSTOM STYLE -->
+    <style name="Custom.Theme.Receptom" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- GENERAL -->
+    <style name="custom_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_textview_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/custom_textview_subtitle_textSize</item>
+    </style>
+
+    <!-- region PROGRESSBAR-->
+    <style name="custom_progressbar" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+    </style>
+    <!-- endregion PROGRESSBAR-->
+
+    <!-- region FLOATINGBUTTONS -->
+
+    <style name="custom_floating_button" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+    </style>
+
+    <style name="custom_floating_button_extended" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:tint">@color/black</item>
+        <item name="iconTint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+    </style>
+    <!-- endregion FLOATINGBUTTONS -->
+
+    <!-- region DIALOGS -->
+    <style name="custom_dialog_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:tint">@color/colorSecondary</item>
+        <item name="cornerRadius">@dimen/custom_dialog_button_radius</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="custom_dialog_input_text" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:importantForAccessibility">yes</item>
+    </style>
+
+    <style name="custom_imageview">
+        <item name="android:layout_width">@dimen/custom_imageview_width</item>
+        <item name="android:layout_height">@dimen/custom_imageview_width</item>
+    </style>
+    <!-- endregion DIALOGS -->
+
+    <!-- region RecipePreview -->
+    <style name="custom_recipe_preview_cardview" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="cornerRadius">@dimen/custom_ingredients_list_cardview_corners</item>
+        <item name="cardElevation">@dimen/custom_ingredients_list_cardview_elevation</item>
+    </style>
+
+    <style name="custom_recipe_preview_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_recipe_preview_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_recipe_preview_textview_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_recipe_preview_textview_subtitle_textSize</item>
+    </style>
+
+    <style name="custom_recipe_preview_textview_content" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/custom_recipe_preview_textview_content_textSize</item>
+    </style>
+    <!-- endregion RecipePreview -->
+
+    <!-- region IngredientsList -->
+    <style name="custom_ingredients_list_cardview" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">300dp</item>
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="cornerRadius">@dimen/custom_ingredients_list_cardview_corners</item>
+        <item name="cardElevation">@dimen/custom_ingredients_list_cardview_elevation</item>
+    </style>
+
+    <style name="custom_ingredients_list_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_ingredients_list_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_ingredients_list_textview_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/custom_recipe_preview_textview_subtitle_textSize</item>
+    </style>
+
+    <style name="custom_ingredients_list_textview_content" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/custom_ingredients_list_textview_content_textSize
+        </item>
+    </style>
+    <!-- endregion IngredientsList -->
+
+    <!-- region RecipeList-->
+    <style name="custom_recipe_list_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_recipes_list_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_recipe_list_textview_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/custom_recipes_list_textview_subtitle_textSize</item>
+    </style>
+
+    <style name="custom_recipe_list_textview_empty" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/custom_recipe_preview_textview_subtitle_textSize</item>
+    </style>
+    <!-- endregion RecipeList-->
+
+    <!-- region RecipeDetail -->
+    <style name="custom_recipe_detail_tablayout" parent="Widget.Material3.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="android:elevation">@dimen/custom_recipe_detail_elevation</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabMaxWidth">@dimen/custom_recipe_detail_tablayout_maxwidth</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextColor">@color/black</item>
+    </style>
+
+    <style name="custom_recipe_detail_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="android:elevation">@dimen/custom_recipe_detail_elevation</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_recipe_detail_textview_title_textSize</item>
+    </style>
+
+
+    <style name="custom_recipe_detail_imageview">
+        <item name="android:layout_width">@dimen/custom_recipe_detail_imageview_width</item>
+        <item name="android:layout_height">@dimen/custom_recipe_detail_imageview_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- endregion RecipeDetail -->
+
+    <!-- region Components-->
+    <style name="custom_textview_title_components" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/component_title_text_size</item>
+    </style>
+
+    <style name="custom_textview_subtitle_components" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/component_subtitle_text_size</item>
+    </style>
+
+    <style name="custom_textview_content_components" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/component_content_text_size</item>
+    </style>
+    <!-- endregion Components-->
+
+    <!-- region Items -->
+    <style name="custom_item_ingredient_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/custom_item_ingredient_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_item_ingredient_imageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="custom_item_recipe_textview_title" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/custom_item_recipe_textview_title_textSize</item>
+    </style>
+
+    <style name="custom_item_recipe_imageview">
+        <item name="android:layout_width">@dimen/custom_item_recipe_imageview_width</item>
+        <item name="android:layout_height">@dimen/custom_item_recipe_imageview_height</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <!-- endregion Items -->
+</resources>

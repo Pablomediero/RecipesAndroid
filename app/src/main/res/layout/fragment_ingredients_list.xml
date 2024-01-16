@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_large"
+    tools:context=".presentation.ingredients_list.IngredientsListFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_recipe_subinfo"
+        style="@style/custom_ingredients_list_textview_title"
+        android:layout_marginTop="@dimen/custom_ingredients_list_margin_vertical"
+        android:gravity="center"
+        android:text="@string/ingredients_info_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_ingredients_subinfo"
+        style="@style/custom_ingredients_list_textview_subtitle"
+        android:layout_marginTop="@dimen/custom_ingredients_list_margin_vertical"
+        android:gravity="center"
+        android:text="@string/ingredients_info_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        style="@style/custom_ingredients_list_cardview"
+        android:layout_marginTop="@dimen/custom_ingredients_list_margin_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recipe_subinfo">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ingredient_empty_rv"
+            style="@style/custom_ingredients_list_textview_content"
+            android:layout_marginTop="@dimen/custom_ingredients_list_margin_top"
+            android:gravity="center"
+            android:text="@string/tv_ingredients_empty_text"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ingredients_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/bt_ingredients_search"
+        style="@style/custom_floating_button_extended"
+        android:layout_margin="@dimen/custom_ingredients_list_floating_button_margin"
+        android:contentDescription="@string/search"
+        android:text="@string/ingredients_list_fragment_button_search"
+        app:icon="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/bt_ingredients_add"
+        style="@style/custom_floating_button_extended"
+        android:layout_margin="@dimen/custom_ingredients_list_floating_button_margin"
+        android:contentDescription="@string/Add"
+        android:text="@string/ingredients_list_fragment_button_add"
+        app:icon="@drawable/ic_add_ingredient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_ingredients_list"
+        style="@style/custom_progressbar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>

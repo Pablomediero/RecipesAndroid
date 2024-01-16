@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name_title">Receptom</string>
+    <string name="symbol">~</string>
+    <string name="app_name_subtitle_menu">Menu</string>
+
+
+    <string name="recipe_preview_button_generate_other">Siguiente</string>
+    <string name="recipe_preview_button_save">Guardar</string>
+
+    <!-- IngredientsListFragment -->
+    <string name="ingredients_list_button_add">Añadir</string>
+    <string name="ingredients_list_button_search">Buscar</string>
+
+    <!--Recipe Preview -->
+    <string name="recipe_preview_name">Nombre de la receta.</string>
+    <string name="recipe_preview_ingredients">Ingredientes de la receta.</string>
+    <string name="component_instructions_tv_title">Preparación de la receta.</string>
+    <string name="component_serving_tv_title">Número de Personas.</string>
+
+    <!-- Dialog Fragment -->
+    <string name="dialog_add_tiitle">Nombre del ingrediente</string>
+    <string name="dialog_add_ingredient_name_hint">Escribe el ingrediente:</string>
+    <string name="dialog_add_button">Agregar</string>
+    <string name="tv_recipes_empty_text">Lista vacía, haz click en el menú inferior para navegar a la pantalla de búsqueda.</string>
+    <string name="tv_ingredients_empty_text">Lista vacía, haz click en el icono inferior derecho y agrega algún ingrediente.</string>
+    <string name="menu_title_search_recipe">Buscar Receta</string>
+    <string name="menu_title_save_recipes">Recetas Guardadas</string>
+    <string name="recipe_title_info">Recetas almacenadas:</string>
+    <string name="recipe_subtitle_info">Estas son tus recetas guardadas.</string>
+    <string name="tv_recipe_info_sub">Puedes pulsar en la receta para poder ver más información.</string>
+    <string name="component_serving_tv_subtitle">Esta receta esta calculada para este número de personas</string>
+    <string name="back">Go back</string>
+    <string name="delete">Delete recipe</string>
+    <string name="search">Search recipe</string>
+    <string name="Add">Add Ingredient</string>
+    <string name="icon_delete">Icon delete ingredient</string>
+    <string name="component_ingredients_tv_subtitle">La receta está compuesta por los siguientes ingredientes:</string>
+    <string name="component_instructions_tv_subtitle">La receta está preparada de la siguiente manera:</string>
+    <string name="ingredients_info_title">Tabla de Ingredientes:</string>
+    <string name="ingredients_info_subtitle">Esta es la lista de ingredientes necesarios para encontrar una receta.</string>
+    <string name="menu_item_search">Buscar</string>
+    <string name="menu_item_recipe">Receta</string>
+    <string name="dialog_action_confirm_add_title">Guardado</string>
+    <string name="dialog_action_confirm_add_subtitle">Acabas de guardar esta receta en tu lista.</string>
+    <string name="dialog_action_confirm_add_button">Aceptar</string>
+    <string name="dialog_action_confirm_add_imageview_desc">Logo confirm add recipe</string>
+    <string name="dialog_action_confirm_next_title">Generar otra receta</string>
+    <string name="dialog_action_confirm_next_subtitle">¿Estás seguro de que quieres generar otra receta distinta?</string>
+    <string name="dialog_action_confirm_next_imageview_desc">Logo Next Recipe</string>
+    <string name="dialog_action_confirm_next_button_no">No</string>
+    <string name="dialog_action_confirm_next_button_yes">Si</string>
+    <string name="dialog_action_confirm_delete_title">Eliminar Receta</string>
+    <string name="dialog_action_confirm_delete_subtitle">¿Estás seguro de que quieres eliminar esta receta?</string>
+    <string name="dialog_action_confirm_delete_imageview_desc">Logo Delete recipe</string>
+    <string name="dialog_action_confirm_delete_button_no">No</string>
+    <string name="dialog_action_confirm_delete_button_yes">Si</string>
+    <string name="ingredients_list_fragment_button_search">Buscar</string>
+    <string name="ingredients_list_fragment_button_add">Añadir</string>
+    <string name="component_ingredients_tv_title">Ingredientes de la receta</string>
+
+</resources>
