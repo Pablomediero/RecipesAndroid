@@ -24,7 +24,7 @@ Librerias y herramientas que he utilizado en esta aplicación.
 
 - **Koin:** inyector de dependencias.
 
-- **Componente Navigation:** Gestión de datos.
+- **Componente Navigation:** Gestión de navegación.
 
 - **ViewBinding:** Acceso a vistas.
 
