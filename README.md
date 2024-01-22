@@ -20,25 +20,23 @@ Para la interfaz de usuario he combinado el patrón de diseño MVVM (Model-View-
 ## Librerías 
 Librerias y herramientas que he utilizado en esta aplicación. 
 
-- **Room:** Base de datos local.
+- **Room:** Sistema de base de datos local.
 
-- **Koin:** Inyector de dependencias.
+- **Koin:** Inyector de dependencias para una gestión eficiente de componentes.
 
-- **Componente Navigation:** Gestión de navegación.
+- **Componente Navigation:** Simplifica la gestión de la navegación entre las distintas partes de la aplicación.
 
-- **ViewBinding:** Acceso a vistas.
+- **ViewBinding:** Facilita el acceso a las vistas y mejora la seguridad en la manipulación de las mismas.
 
-- **Live Data:** Gestión de datos.
+- **Live Data:** Implementado para una gestión reactiva de los datos.
 
-- **Coroutines:** Asincronía.
+- **Coroutines:** Utilizadas para la gestión de tareas asíncronas, asegurando un rendimiento eficiente.
 
-- **Retrofit:** Gestión y comunicación con API.
+- **Retrofit - OkHttp:** Para la comunicación efectiva con APIs externas.
 
-- **OkHttp:** Servicios de red.
+- **Gson:** Herramienta esencial para convertir datos en formato JSON.
 
-- **Gson:** Convertir datos json.
-
-- [Animated Button Bar](https://github.com/Droppers/AnimatedBottomBar): Barra de navegación entre fragments.
+- [Animated Button Bar](https://github.com/Droppers/AnimatedBottomBar): Incluida como una funcionalidad de navegación entre fragments.
 
 ## Chatgpt API 
 
